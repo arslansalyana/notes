@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, #24d5f8, #192d9c);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+    padding: 50px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.container h1 img {
+    width: 60px;
+    margin-right: 8px;
+}
+.container button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    padding: 15px 25px;
+    border-radius: 40px;
+    margin: 20px 0 30px;
+    color: #fff;
+    background: linear-gradient(360deg, #081458, #0ac7c8);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.container button:hover {
+    background: linear-gradient(360deg, #0ac7c8, #081458);
+    transform: scale(1.05);
+}
+.container button img {
+    width: 30px;
+    margin-right: 8px;
+}
+.notes-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-box {
+    width: 100%;
+    max-width: 400px;
+    height: 130px;
+    background-color: #fff;
+    color: #333;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box img {
+    width: 25px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    .container {
+        padding: 30px;
+    }
+    .container h1 {
+        font-size: 36px;
+    }
+    .container button {
+        padding: 13px 22px;
+        border-radius: 36px;
+    }
+    .container button img {
+        width: 27px;
+    }
+    .input-box {
+        height: 140px;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        padding: 20px;
+    }
+    .input-box {
+        max-width: 280px;
+        padding: 10px;
+    }
+}
